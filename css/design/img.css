@@ -1,0 +1,21 @@
+.logo_img {
+    width: 25vw;
+   
+}
+
+@media screen and (max-width: 768px) {
+    
+    .logo_img {
+        content: url('/assets/Color\ logo\ -\ no\ background.png'); 
+        width: 20vw;
+        max-width: 100px;
+    }
+
+    nav {
+        padding: 1em 1.5em 1em 1.5em !important;
+    }
+    
+  }
+
+ 
+  
