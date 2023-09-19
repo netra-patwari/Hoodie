@@ -7,6 +7,10 @@ nav {
 .flex {
     display: flex;
     flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .grid {
@@ -16,3 +20,35 @@ nav {
     place-items: center;
 }
 
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    justify-content: center;
+    
+}
+
+.heading {
+ display: grid;
+ place-items : center;
+place-content : center;   
+}
+
+.cards {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2em;
+}
+
+.flex > * {
+    flex: 1;
+    
+}
+
+.pr-rev div {
+    display: grid;
+    place-content : center;
+    gap: 1em;
+
+}
+.footer-info {
+    text-align: center;
+}

@@ -1,6 +1,6 @@
 .logo_img {
     width: 25vw;
-   
+    background-color: transparent;
 }
 
 .fluid {
@@ -10,11 +10,22 @@
     box-shadow: 0px 4px 2px 5px rgba(80, 255, 220, 0.25);
 }
 
-.fluid-2 {
+.fluid-2 ,.profile-img {
     height: 100% ;
     width: 100% ;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.profile-img {
+    aspect-ratio: 1/1;
+    width: clamp(100px,20vw,180px);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-img {
+    display: inline-block;
 }
 
 .circle {
@@ -22,6 +33,23 @@
     height: clamp(300px,40vw,500px);
     border-radius: 50%;
     overflow: hidden;
+}
+
+img {
+    background-color:  hsl(181, 54%, 50%);
+}
+
+
+.card-img {
+    aspect-ratio: 9 / 16;
+    width: clamp(200px,30vw,250px);
+    object-fit: cover;
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+/* Hover effect to move the image up */
+.card-img:hover {
+  transform: translateY(-15px); /* Move the image up by 10 pixels on hover */
 }
 
 

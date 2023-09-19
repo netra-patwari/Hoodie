@@ -31,3 +31,19 @@ button:hover {
     color: white;
 }
 
+
+h5 {
+    display: inline-block; /* Ensure the underline spans the entire text width */
+    position: relative; /* Position the underline relative to the text */
+  }
+  
+  /* Style for the text */
+h5::before {
+    content: ''; /* Create a pseudo-element for the underline */
+    position: absolute; /* Position the underline absolutely */
+    width: 100%; /* Ensure the underline spans the entire text width */
+    height: 0.5px;
+    background-color:  hsl(181, 54%, 50%); /* Set the underline color */
+    margin-top: 20px; /* Add space between text and underline */
+  }
+

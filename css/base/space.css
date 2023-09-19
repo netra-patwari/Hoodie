@@ -6,12 +6,21 @@
     padding: 2em;
 }
 
+.pd-3 {
+    padding: 3em;
+}
+
+
 .pd-05 {
     padding: .5em;
 }
 
 .pd-05-1 {
     padding: .5em 1em .5em 1em;
+}
+
+.pd-bl-05 {
+    padding-block: 0.5em;
 }
 
 .mr-1-bl {
@@ -28,4 +37,8 @@
 
 .mr-1 {
     margin: 1em;
+}
+
+.pd-bl-15 {
+    padding-block: 15em;
 }

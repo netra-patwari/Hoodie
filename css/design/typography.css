@@ -4,6 +4,7 @@
 
 :root {
   --main-color: hsl(181, 54%, 50%);
+  --main-color-darkmode : hsl(181, 62%, 31%);
   --primary-color : hsl(300, 0%, 41%);
   --text-color : hsl(0, 0%, 0%);
 
@@ -12,7 +13,10 @@
 
   --fs-xl : clamp(3rem ,7vw + 1rem , 4.5rem);
   --fs-l : clamp(2rem ,6vw + 1rem , 3.5rem);
-  --fs-m : clamp(0.5rem, 5vw, 1.5rem);
+  --fs-s : clamp(0.8rem, 2vw, 1.2rem);
+  --fs-m : clamp(0.3rem, 4vw, 1.5rem);
+  --fs-xs : clamp(0.2rem, 4vw, 1rem);
+
 
 }
 
@@ -33,6 +37,32 @@ h2 {
   font-size: var(--fs-l);
 }
 
+
+
+h4 {
+  font-size: var(--fs-s);
+}
+
+h3,h5 ,h4{
+  font-family: var(--primary-font);
+  
+}
+
+h4{
+  font-weight: lighter;
+  color: var(--primary-color);
+}
+
+h5 {
+  color: var(--main-color);
+  font-size: var(--fs-xs);
+
+}
+
+h3 {
+  font-size: var(--fs-m); 
+}
+
 p {
   font-family: var(--primary-font);
   font-size: var(--fs-m);
@@ -44,3 +74,48 @@ span {
   color: var(--text-color);
  
 }
+
+h5:hover {
+  color: hsla(180, 100%, 67%, 0.281);
+} 
+
+.small {
+  font-size: var(--fs-m);
+}
+
+.reviews h2 {
+  text-align: center;
+}
+
+.footer-info p {
+  padding: 0em;
+  font-size: var(--fs-s);
+} 
+
+footer {
+  background:var(--main-color);
+  color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: hsl(0, 0%, 0%);  }
+  h1, h2, h3 {
+    color: hsl(255, 50%, 750%);
+  }
+
+  span ,h5{
+    color: var(--main-color-darkmode);
+  }
+  h4 {
+    color: hsl(0, 0%, 81%);
+  }
+  button,h5::before{
+    background-color: var(--main-color-darkmode);
+  }
+  footer {
+    background:var(--main-color-darkmode);
+    color: white;
+  }
+  
+  }
