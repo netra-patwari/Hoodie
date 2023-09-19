@@ -1,0 +1,33 @@
+
+:root {
+    --main-color: hsl(181, 54%, 50%);
+    --primary-color : hsl(300, 0%, 41%);
+    --text-color : hsl(0, 0%, 0%);
+}
+
+button {
+    border-radius: 0%;
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+}
+
+.btn2 {
+    color: var(--main-color);
+    background-color: white;
+    border: 1px solid var(--main-color);
+    margin-left: 1em;
+}
+
+button:hover {
+    color: var(--main-color);
+    background-color: white;
+    border: none;
+}
+
+.btn2:hover  {
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+}
+

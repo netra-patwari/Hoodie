@@ -3,6 +3,28 @@
    
 }
 
+.fluid {
+    width: clamp(300px,40vw,500px);
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 4px 2px 5px rgba(80, 255, 220, 0.25);
+}
+
+.fluid-2 {
+    height: 100% ;
+    width: 100% ;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.circle {
+    width: clamp(300px,40vw,500px);
+    height: clamp(300px,40vw,500px);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
 @media screen and (max-width: 768px) {
     
     .logo_img {
@@ -15,6 +37,15 @@
         padding: 1em 1.5em 1em 1.5em !important;
     }
     
+  }
+
+  @media (max-width: 678px) {
+    .grid-item:nth-child(1) {
+      order: 2; 
+    }
+    .grid-item:nth-child(2) {
+      order: 1; 
+    }
   }
 
  

@@ -1,11 +1,46 @@
-/* Playfair Display */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
 
-/* Roboto */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 
 :root {
-  --main-color: #3CC3C5;
+  --main-color: hsl(181, 54%, 50%);
+  --primary-color : hsl(300, 0%, 41%);
+  --text-color : hsl(0, 0%, 0%);
+
   --main-font: "Playfair Display SC", serif;
   --primary-font: "Roboto", sans-serif;
+
+  --fs-xl : clamp(3rem ,7vw + 1rem , 4.5rem);
+  --fs-l : clamp(2rem ,6vw + 1rem , 3.5rem);
+  --fs-m : clamp(0.5rem, 5vw, 1.5rem);
+
+}
+
+button {
+  font-size: var(--fs-m);
+  font-family: var(--primary-font);
+}
+
+h1 {
+  font-family: var(--main-font);
+  font-size: var(--fs-xl);
+  color: var(--primary-color);
+
+}
+
+h2 {
+  font-family: var(--primary-font);
+  font-size: var(--fs-l);
+}
+
+p {
+  font-family: var(--primary-font);
+  font-size: var(--fs-m);
+  flood-color: var(--primary-color);
+
+}
+
+span {
+  color: var(--text-color);
+ 
 }

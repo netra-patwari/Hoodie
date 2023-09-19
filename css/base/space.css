@@ -5,3 +5,27 @@
 .pd-2 {
     padding: 2em;
 }
+
+.pd-05 {
+    padding: .5em;
+}
+
+.pd-05-1 {
+    padding: .5em 1em .5em 1em;
+}
+
+.mr-1-bl {
+    margin-block: 1em ;
+}
+
+.mr-05-bl {
+    margin-block: 0.5em ;
+}
+
+.mr-03 {
+    margin: 0.3em;
+}
+
+.mr-1 {
+    margin: 1em;
+}

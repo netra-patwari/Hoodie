@@ -3,3 +3,16 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    justify-content: center;
+    place-items: center;
+}
+
